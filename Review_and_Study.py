@@ -40,8 +40,9 @@ print("=== github에 로그인 성공 ===")
 print("=== 수업했던 내용 대충 정리해보기 ===")
 
 # print() 실행하기
-# 한 줄만 출력을 실행하고 싶다면 Shift + Enter (실행 후 다음 print로 이동) / Ctrl + Shift (실행 후 아랫 줄 생기고 이동)
 print(1)  # 숫자 사용 (따옴표 사용 안함)
 print("a")  # 문자 사용 (따옴표 사용)
-print(1 + 2), print("1" + "2")
+
+# 쉼표를 사용해서 한 줄로 작성해도 print()하나씩 한 줄로 출력
+print(1 + 2), print("1" + "2"), print("한 줄")
 print(3 + 5), print("3" + "5")
