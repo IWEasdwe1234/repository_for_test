@@ -86,3 +86,22 @@ print(F)  # 파
 print(G)  # 솔
 
 # -------------------------------------------
+print("=== 자료형 ===")
+# 정수형 : int (소수점 없이 딱 떨어지는 수) ex) 5, 0, -1
+# 실수형 : float (소수점이 있는 수) ex) 5.0, math.pi(π)
+# 문자열형 : str (따옴표 안에 감싸진 문자, 큰따옴표나 작은따옴표 사용(혼용 불가),) ex) "문자열", "123"(숫자도 문자열도 따옴표 안이면 취급)
+# 불린형 : bool : 참(True), 거짓(False)로 표현되는 자료형 (True와 False의 첫 글자는 반드시 대문자) ex) 3 > 2 -> True
+
+# type() 함수로 종류 확인 가능
+# 예시/
+print(type(1))  # int
+print(type(0))  # int
+print(type(1.0))  # float
+
+import math  # pi를 사용하기 위해 "math"라는 도구함을 불러오겠다(import)라는 명령어
+
+print(type(math.pi))  # float
+print(type("ABC"))  # str
+print(type("123"))  # str
+print(type(3 == 3))  # True (수학 연산자 "같다"를 표현 시 "==" 사용)
+print(type(5 >= 3))  # False (이상과 이하는 >=, <=를 사용)
