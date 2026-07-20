@@ -144,3 +144,8 @@ print("=== 연산자 ===")
 #   and : 양쪽 조건이 전부 만족할 때 ex) print(True and True) -> True
 #   or : 양쪽 조건 중 하나라도 만족할 때 ex) print(True or False) -> True
 #   not : 결과 값 반대로 ex) print(not True) -> False
+
+# -------------------------------------------
+print("=== input() ===")
+# 실행(F5, Ctrl + F5, Shift + Enter)을 했을 때
+# input()이 있는 위치에서 실행이 멈춤 -> Enter를 누르면 다음 단계로 실행됨
