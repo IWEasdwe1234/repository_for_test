@@ -222,3 +222,6 @@ print("=== 인덱싱, 슬라이싱 ===")
 word = "abcdefg"
 print(word[3])  # d (d는 4번째에 위치한 번호이지만 양수는 0부터 시작)
 print(word[-2])  # f (음수일 때는 단어 맨 뒷글자부터 -1, -2 순서)
+
+korean_word = "가나다라"  # 단어는 한국어도 가능
+print(korean_word[2], korean_word[-1])  # 다 라
