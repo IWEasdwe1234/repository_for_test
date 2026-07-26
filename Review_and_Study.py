@@ -313,3 +313,16 @@ print("print(word_1[::2])\nprint(word_1[1::2])\nprint(word_1[1::3])\n\n↓결과
 print(word_1[::2])
 print(word_1[1::2])
 print(word_1[1::3])
+
+# -- 콜론 2개, 음수 사용 --
+print("\n-- 콜론 2개, 음수 사용 --\n")
+# 콜론 2개와 건너뛸 간격 값에 음수를 넣으면 뒤집어서 값을 가져옴
+# ex)
+#   print(word_1[::-1]) : 시라솔파미레도
+#   print(word_1[2::-1]) : 미레도
+#   print(word_1[::-2]) : 시솔미도
+print("print(word_1[::-1])\nprint(word_1[2::-1])\nprint(word_1[::-2])\n\n↓결과↓\n")
+
+print(word_1[::-1])
+print(word_1[2::-1])
+print(word_1[::-2])
