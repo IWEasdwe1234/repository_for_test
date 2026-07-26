@@ -298,3 +298,18 @@ print("print(word_1[-3:])\nprint(word_1[:-3])\n\n↓결과↓\n")
 
 print(word_1[-3:])  # 솔라시
 print(word_1[:-3])  # 도레미파
+
+# -- 건너뛴 값 가져오기 --
+print("\n-- 콜론 2개 사용 --\n")
+# 콜론을 2개 사용하여 슬라이싱하면 건너뛴 값을 가져옴
+# 변수이름[시작 위치::건너뛸 간격]
+# ex)
+#   print(word_1[::2]) : 도미솔시
+#   print(word_1[1::2]) : 레파라
+#   print(word_1[1::3]) : 레솔
+
+print("print(word_1[::2])\nprint(word_1[1::2])\nprint(word_1[1::3])\n\n↓결과↓\n")
+
+print(word_1[::2])
+print(word_1[1::2])
+print(word_1[1::3])
