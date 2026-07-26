@@ -277,3 +277,24 @@ print(
 print('word_1 = "도레미파솔라시"\nprint(word_1[2:5])\n\n↓결과↓\n')
 word_1 = "도레미파솔라시"
 print(word_1[2:5])
+
+# -- 숫자 생략 --
+print("\n-- 숫자를 생략한 슬라이싱 --\n")
+# 슬라이싱에서 숫자를 생략할 수 있음
+# ex)
+#   print(word_1[:3]) : 도레미
+#   print(word_1[3:]) : 파솔라시
+#   print(word_1[:]) : 도레미파솔라시
+print("print(word_1[:3])\nprint(word_1[3:])\nprint(word_1[:])\n\n↓결과↓\n")
+
+print(word_1[:3])  # 도레미
+print(word_1[3:])  # 파솔라시
+print(word_1[:])  # 도레미파솔라시
+
+# -- 음수 슬라이싱 --
+print("\n- 음수 사용 시 -\n")
+
+print("print(word_1[-3:])\nprint(word_1[:-3])\n\n↓결과↓\n")
+
+print(word_1[-3:])  # 솔라시
+print(word_1[:-3])  # 도레미파
