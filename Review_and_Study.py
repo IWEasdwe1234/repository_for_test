@@ -326,3 +326,105 @@ print("print(word_1[::-1])\nprint(word_1[2::-1])\nprint(word_1[::-2])\n\n↓결�
 print(word_1[::-1])
 print(word_1[2::-1])
 print(word_1[::-2])
+
+# -------------------------------------------
+
+# -- 문자열 다루기 --
+print("\n=== 문자열 다루기 ===")
+
+# == 메서드 ==
+# 값 → 객체
+# 메서드 → 객체의 기능
+
+# -- 점 문법 --
+# 형태
+#   문자열.메서드이름()
+#   (word.upper) ← 괄호를 꼭 붙여야 실행
+#   (count('a')) ← 추가 정보가 필요하면 괄호 안에 인자
+#   .lower()     ← 인자 없으면 괄호만 비워 둠
+
+# 예시/
+print("\n-- 점 문법 - 코드 예시 --")
+# 문자열.메서드이름() 형태로 호출
+
+print("ABCDefg".upper())  # "문자열"과 .(점)과 괄호()로 형성된 코드
+
+# 변수를 불러와서 실행
+word_2 = "ABC DeFg"  # 변수를 저장
+print(word_2.count("e"))  # .메서드() 괄호 안에 인자 필요
+print(word_2.lower())  # .메서드() 괄호 안에 인자 없음
+
+print(word_2)  # ABCDefg ← 변수를 재할당하지 않았으므로 원본이 바뀌지 않음
+
+# -- 종류 --
+print("\n== 메서드 종류 ==")
+print("\n변수값 : " + word_2)
+
+# .upper()  모두 대문자로
+print("\n- .upper() -")
+print(word_2.upper())
+
+# .lower()  모두 소문자로
+print("\n- .lower() -")
+print(word_2.lower())
+
+# .isupper()  모두 대문자인지 확인 (결과: True/False)
+print("\n- .isupper() -")
+print(word_2.isupper())
+print(word_2.upper().isupper())
+
+# .islower()  모두 소문자인지 확인 (결과: True/False)
+print("\n- .islower() -")
+print(word_2.islower())
+print(word_2.lower().islower())
+
+# .capitalize()  첫 글자 대문자로 (문장)
+print("\n- .capitalize() -")
+print(word_2.capitalize())
+
+# .title()  첫 글자 대문자로 (단어마다)
+print("\n- .title() -")
+print(word_2.title())
+
+# - 공백 관련 종류 -
+print("\n- 공백 관련 -")
+
+word_3 = "      Test Text   "
+print("\n변수값 : " + word_3)
+
+# .strip()  앞, 뒤 공백 제거
+print("\n- .strip() -")
+print(word_3.strip())
+
+# .lstrip()  왼쪽(앞) 공백 제거
+print("\n- .lstrip() -")
+print(word_3.lstrip())
+
+# .rstrip()  오른쪽(뒤) 공백 제거
+print("\n- .rstrip() -")
+print(word_3.rstrip())
+
+# - 특정 문자 제거 -
+print("\n")
+word_4 = "!!!!Test Text!!!!"
+print("\n변수값 : " + word_4)
+
+# .strip(문자)  앞, 뒤 특정 문자 제거
+print("\n- .strip(!) -")
+print(word_4.strip("!"))
+
+# - 중간 공백 제거 -
+word_3 = "      Test Text   "
+print("\n변수값 : " + word_3)
+
+# .replace(" ", "")  중간 공백 제거
+print("\n- .replace() -")
+print(word_3.replace(" ", ""))
+
+# - 체이닝 -
+print("\n - 체이닝 -")
+# 메서드 뒤에 메서드를 이어 붙이기
+# 예시)
+print("\nword_2 = ABC DeFg")
+print("\nword_2.lower().title()")
+print(word_2.lower().title())
