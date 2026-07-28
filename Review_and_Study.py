@@ -428,3 +428,67 @@ print("\n - 체이닝 -")
 print("\nword_2 = ABC DeFg")
 print("\nword_2.lower().title()")
 print(word_2.lower().title())
+
+# -------------------------------------------
+
+# -- 치환·분리·결합 --
+print("\n=== 치환·분리·결합 ===")
+
+# -- 단어 바꾸기 --
+
+# - replace() -
+print("\n- .replace() -")
+# 특정 글자·단어를 다른 것으로 바꾸기
+# 형태 : 변수이름.replace("A", "B")
+#    A : 바꿀 것
+#    B : 새 것
+
+# 예시 1) 기존 변수의 값 변경하기
+print('\n"공 백 제 거".replace(" ", "")')
+text = "공 백 제 거"
+text = text.replace(" ", "")  # 공백문자 → 빈문자
+print(text)  # 공백제거
+
+# 예시 2) 변수 할당 시 바로 사용하기
+print('\n"010-1234-1234".replace("-", "")')
+phone_num = "010-1234-1234".replace("-", "")  # "-" → 빈문자
+print(phone_num)  # 01012341234
+
+# 예시 3) 체이닝으로 여러 차례 바꾸기
+print('\n"! ! ! 체이닝 ! ! !".replace(" ", "").replace("!", "")')
+test_cn = "! ! ! 체이닝 ! ! !".replace(" ", "").replace("!", "")
+print(test_cn)
+
+
+# - split() -
+print("\n\n- .split() -")
+# 정해진 구분자로 문자열을 여러 조각 나누기
+
+# 예시 1) 공백으로 나누어졌을 때
+print('\n"A B C".split()')
+text_1 = "A B C"
+text_1 = text_1.split()
+print(text_1)  # ['A', 'B', 'C']
+
+# 예시 2) 쉼표로 나누어졌을 때
+print('\n"가,나,다".split(",")')
+text_2 = "가,나,다"
+text_2 = text_2.split(",")
+print(text_2)  # ['가', '나', '다']
+
+
+# 예시 3) 괄호에 횟수 넣기
+print('\n"도-레-미-파-솔".split("-", 2)')
+print("도-레-미-파-솔".split("-", 2))  # ['도', '레', '미-파-솔']
+
+# - join() -
+print('\n\n- "".join() -')
+# 여러 조각을 하나의 문자열로 합치기
+# 형태 : "A".join(B)
+#    A : 구분자
+#    B : 리스트
+
+# 예시)
+print('\n"-".join(text_2)')
+print("text_2 :", text_2)  # ['가', '나', '다']
+print("-".join(text_2))  # 가-나-다
