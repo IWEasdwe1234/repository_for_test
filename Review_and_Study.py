@@ -543,3 +543,9 @@ print("\nf-string")
 A = "변수값1"
 B = "변수값2"
 print(f"A = {A}, B = {B}")
+
+A = 5
+B = 8
+print(f"A = {A}, B = {B}\nA * B = {A*B}")
+print(f"A / B = {A/B}")
+print(f"A / B = {A/B:.2f}")
