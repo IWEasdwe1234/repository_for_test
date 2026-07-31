@@ -610,3 +610,11 @@ print(A[-3:])  # ["b", "c", "d"]    : 뒤에서(음수) 3번째("b")부터 끝(�
 # 예시)
 D = ["도", "레", "미", "파", "솔", "라", "시"]
 print(D[::2])  # 도 미 솔 시
+
+# -- in연산자 --
+# 값의 존재를 참(True)·거짓(False)으로 확인
+# 형태)
+list = ["A", "B", "C"]
+print("A" in list)  # True
+print("D" in list)  # False
+print("E" not in list)  # True
