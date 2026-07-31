@@ -603,18 +603,36 @@ print(A[-3:])  # ["b", "c", "d"]    : 뒤에서(음수) 3번째("b")부터 끝(�
 
 # 콜론을 2개 사용 시 값을 건너 뜀
 # 형태)
-# print(n1:n2:n3])
-# n1 = 시작 번호 (첫번째 번호 : 0이 아닌 1)
-# n2 = 끝 번호 ()
-# n3 = 건너 뛸 간격
+#  print(n1:n2:n3])
+#  n1 = 시작 번호 (첫번째 번호 : 0이 아닌 1)
+#  n2 = 끝 번호 ()
+#  n3 = 건너 뛸 간격
+
 # 예시)
 D = ["도", "레", "미", "파", "솔", "라", "시"]
 print(D[::2])  # 도 미 솔 시
 
 # -- in연산자 --
+print("\n-- in 연산자 --")
 # 값의 존재를 참(True)·거짓(False)으로 확인
 # 형태)
+#  print("확인할 값" in 리스트 이름)
+
+# 예시)
 list = ["A", "B", "C"]
 print("A" in list)  # True
 print("D" in list)  # False
 print("E" not in list)  # True
+
+# -- append() --
+print("\n-- append() --")
+# 리스트 맨 끝에 값 하나를 추가
+# 형태)
+#  리스트명.append(추가할 값)
+
+# 예시)
+list = [10, 20, 30, 40, 50]
+list.append(60)
+print(list)
+list.append(14)
+print(list)
