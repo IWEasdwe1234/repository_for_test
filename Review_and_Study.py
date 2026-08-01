@@ -704,7 +704,7 @@ print(list2)  # ['라', '마']
 
 # -- sort() --
 print("\n-- sort() --")
-# 작은 값부터 오름차순 정렬
+# 작은 값부터 오름차순 정렬(내림차순은 revers()횔용)
 # 형태)
 # 리스트명.sort()
 
@@ -712,3 +712,14 @@ print("\n-- sort() --")
 list = [3, 4, 6, 1, 2, 7, 5]
 list.sort()
 print(list)  # [1, 2, 3, 4, 5, 6, 7]
+
+# -- reverse() --
+print("\n-- reverse() --")
+# 리스트의 순서를 뒤집음
+# 형태)
+# 리스트명.reverse()
+
+# 예시)
+list = ["도", "레", "미", "파", "솔"]
+list.reverse()
+print(list)  # ['솔', '파', '미', '레', '도']
