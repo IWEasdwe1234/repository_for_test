@@ -628,8 +628,8 @@ print("D" in list)  # False
 print("E" not in list)  # True
 
 
-# -- append() --
-print("\n-- append() --")
+# -- .append() --
+print("\n-- .append() --")
 # 리스트 맨 끝에 값 하나를 추가
 # 형태)
 #  리스트명.append(추가할 값)
@@ -642,8 +642,8 @@ list.append(14)
 print(list)
 
 
-# -- insert() --
-print("\n-- insert() --")
+# -- .insert() --
+print("\n-- .insert() --")
 # 리스트에 원하는 위치의 인덱스 번호로 값 추가
 # 형태)
 # 리스트명.insert(인덱스 번호, 추가할 값)
@@ -654,8 +654,8 @@ list.insert(1, 15)  # 인덱스 번호 1은 2번째(0이 첫번째)
 print(list)  # [10, 15, 20, 30, 40, 50]
 
 
-# -- extend() --
-print("\n-- extend() --")
+# -- .extend() --
+print("\n-- .extend() --")
 # 다른 리스트의 값을 이어붙임
 # 형태)
 # A리스트.extend(B리스트)
@@ -667,8 +667,8 @@ A.extend(B)
 print(A)  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
 
-# -- remove() --
-print("\n-- remove() --")
+# -- .remove() --
+print("\n-- .remove() --")
 # 리스트에 입력한 값을 제거(첫 번째 항목만)
 # 형태)
 # 리스트명.remove("제거힐 깂")
@@ -682,8 +682,8 @@ B.remove("이")
 print(B)  # ['일', '삼', '사', '오']
 
 
-# -- pop() --
-print("\n-- pop() --")
+# -- .pop() --
+print("\n-- .pop() --")
 # 리스트에 원하는 위치(인덱스)의 값 제거
 # 형태)
 # 리스트명.pop(인덱스 번호)
@@ -694,8 +694,8 @@ print(A)  # 제거할 값 출력 가능
 print(list)  # ['일', '이', '삼', '오']
 
 
-# -- del() --
-print("\n-- del() --")
+# -- del --
+print("\n-- del --")
 # 리스트에 원하는 위치(인덱스) 또는 구간(슬라이싱)의 값 제거
 # pop()과 유사하지만 삭제할 값 꺼내기 불가
 # 형태)
@@ -712,8 +712,8 @@ del list2[:3]  # "가", "나", "다"
 print(list2)  # ['라', '마']
 
 
-# -- sort() --
-print("\n-- sort() --")
+# -- .sort() --
+print("\n-- .sort() --")
 # 작은 값부터 오름차순 정렬(내림차순은 revers()횔용)
 # 형태)
 # 리스트명.sort()
@@ -724,8 +724,8 @@ list.sort()
 print(list)  # [1, 2, 3, 4, 5, 6, 7]
 
 
-# -- reverse() --
-print("\n-- reverse() --")
+# -- .reverse() --
+print("\n-- .reverse() --")
 # 리스트의 순서를 뒤집음
 # 형태)
 # 리스트명.reverse()
@@ -736,12 +736,22 @@ list.reverse()
 print(list)  # ['솔', '파', '미', '레', '도']
 
 
-# -- count() --
-print("\n-- count() --")
-# 값이 몇 번 나오는지 확인
+# -- .count() --
+print("\n-- .count() --")
+# 값이 몇 번 나오는지 횟수 확인
 # 형태)
 # 리스트명.count("확인할 값")
 
 # 예시)
 list = ["미", "레", "도", "레", "미", "미", "미"]
-print(list.count("미"))
+print(list.count("미"))  # 4
+
+# -- .index() --
+print("\n-- .index() --")
+# 값이 어디에 나오는지 위치 확인
+# 형태)
+# 리스트명.index("확인할 값")
+
+# 예시)
+list = ["미", "레", "도", "레", "미", "미", "미"]
+print(list.index("레"))  # 1 (값 : 인덱스 번호)
