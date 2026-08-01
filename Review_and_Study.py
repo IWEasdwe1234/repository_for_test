@@ -563,12 +563,14 @@ A = ["a", "b", "c", "d"]
 B = [1, 3, 5, 7, 9]
 C = []
 
+
 # -- len() --
 # len()으로 담긴 값의 개수 확인
 print("\n-- len() --")
 print(len(A))  # 4
 print(len(B))  # 5
 print(len(C))  # 0
+
 
 # -- 인덱스 --
 print("\n-- 인덱스 --")
@@ -581,6 +583,7 @@ print(B[4])  # 9
 # 마지막(맨 뒤) 번호가 -1
 print(A[-1])  # d
 print(B[-2])  # 7
+
 
 # -- 슬라이싱 --
 print("\n-- 슬라이싱 --")
@@ -624,6 +627,7 @@ print("A" in list)  # True
 print("D" in list)  # False
 print("E" not in list)  # True
 
+
 # -- append() --
 print("\n-- append() --")
 # 리스트 맨 끝에 값 하나를 추가
@@ -637,6 +641,7 @@ print(list)
 list.append(14)
 print(list)
 
+
 # -- insert() --
 print("\n-- insert() --")
 # 리스트에 원하는 위치의 인덱스 번호로 값 추가
@@ -647,6 +652,7 @@ print("\n-- insert() --")
 list = [10, 20, 30, 40, 50]
 list.insert(1, 15)  # 인덱스 번호 1은 2번째(0이 첫번째)
 print(list)  # [10, 15, 20, 30, 40, 50]
+
 
 # -- extend() --
 print("\n-- extend() --")
@@ -659,6 +665,7 @@ A = [1, 2, 3, 4, 5]
 B = [6, 7, 8, 9, 0]
 A.extend(B)
 print(A)  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
 
 # -- remove() --
 print("\n-- remove() --")
@@ -674,6 +681,7 @@ print(A)  # [1, 2, 4, 5]
 B.remove("이")
 print(B)  # ['일', '삼', '사', '오']
 
+
 # -- pop() --
 print("\n-- pop() --")
 # 리스트에 원하는 위치(인덱스)의 값 제거
@@ -684,6 +692,7 @@ list = ["일", "이", "삼", "사", "오"]
 A = list.pop(3)  # 인덱스 번호 3 : "사"
 print(A)  # 제거할 값 출력 가능
 print(list)  # ['일', '이', '삼', '오']
+
 
 # -- del() --
 print("\n-- del() --")
@@ -702,6 +711,7 @@ list2 = ["가", "나", "다", "라", "마"]
 del list2[:3]  # "가", "나", "다"
 print(list2)  # ['라', '마']
 
+
 # -- sort() --
 print("\n-- sort() --")
 # 작은 값부터 오름차순 정렬(내림차순은 revers()횔용)
@@ -713,6 +723,7 @@ list = [3, 4, 6, 1, 2, 7, 5]
 list.sort()
 print(list)  # [1, 2, 3, 4, 5, 6, 7]
 
+
 # -- reverse() --
 print("\n-- reverse() --")
 # 리스트의 순서를 뒤집음
@@ -723,3 +734,14 @@ print("\n-- reverse() --")
 list = ["도", "레", "미", "파", "솔"]
 list.reverse()
 print(list)  # ['솔', '파', '미', '레', '도']
+
+
+# -- count() --
+print("\n-- count() --")
+# 값이 몇 번 나오는지 확인
+# 형태)
+# 리스트명.count("확인할 값")
+
+# 예시)
+list = ["미", "레", "도", "레", "미", "미", "미"]
+print(list.count("미"))
