@@ -636,3 +636,14 @@ list.append(60)
 print(list)
 list.append(14)
 print(list)
+
+# -- insert() --
+print("\n-- insert() --")
+# 리스트에 원하는 위치의 인덱스 번호로 값 추가
+# 형태)
+# 리스트명.insert(인덱스번호, 추가할 값)
+
+# 예시)
+list = [10, 20, 30, 40, 50]
+list.insert(1, 15)
+print(list)  # [10, 15, 20, 30, 40, 50]
