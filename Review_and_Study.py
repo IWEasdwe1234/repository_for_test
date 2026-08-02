@@ -832,3 +832,26 @@ else:
 #     print("F") → "F"출력
 
 # 조건은 위에서 아래로 순서대로 실행되기 때문에 if문 조건이 만족한다면 else로 진행하기 전에 실행을 멈춤
+
+# -- not 연산자 --
+print("\n-- not 연산자 --")
+# 값의 결과가 False일 때 not 연산자를 사용하면 True로 뒤집어짐
+# 형태)
+# if not 조건:
+
+# 예시)
+A = 3 > 1  # True
+print(A)  # True 출력
+
+if not (A):  # 조건이 참이기 때문에 실행되지 않고 else로 넘어감
+    print("False")
+else:
+    print("True")  # True 출력
+
+B = 3 < 1  # False
+print(B)  # False 출력
+
+if not (B):  # 조건이 거짓이기 때문에 실행
+    print("True")  # True 출력
+else:  # if문 조건이 만족하기 때문에 실행되지 않음
+    print("False")
