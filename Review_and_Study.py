@@ -957,3 +957,27 @@ for i in range(1, 11):  # 1부터 시작해서 11직전까지 순차적으로 �
 # -- continue로 회차 건너뛰기 --
 print("\n-- continue로 회차 건너뛰기 --")
 # continue는 이번 회차에 조건에 맞으면 다음 회차로 건너뜀
+for i in range(1, 7):  # 1부터 시작해서 7 직전까지 순차적으로 가져오기 반복
+    if i % 2 == 0:  # 2로 나눌 때 딱 맞아 떨어진다면(짝수)
+        continue
+    print(i)  # 1, 3, 5
+
+# -- 사용자 입력(input)으로 반복 제어 --
+print("\n-- 사용자 입력(input)으로 반복 제어 --")
+
+while True:  # 기본은 계속 반복
+    x = input("입력 (q=종료): ")
+    if x == "q":  # 종료 신호면
+        break  # 빠져나옴
+    print("입력:", x)  # 어떤 값을 입력했는지 보여줌
+
+# -- 반복 속 조건 분기 --
+print("\n-- 반복 속 조건 분기 --")
+
+n = int(input("횟수: "))  # 3 입력 시 3번 반복, 반복할 때마다 측정값 입력
+for i in range(n):
+    v = int(input("측정값: "))
+    if v > 5:
+        print(v, "상태 이상")
+    else:
+        print(v, "정상")
