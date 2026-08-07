@@ -981,3 +981,26 @@ for i in range(n):
         print(v, "상태 이상")
     else:
         print(v, "정상")
+
+# -- 누적과 조건의 결합 --
+print("\n-- 누적과 조건의 결합 --")
+
+total = 0
+count = 0
+for v in range(1, 11):
+    if v > 5:
+        total += v
+        count += 1
+print("합:", total, "개수:", count)
+
+# -- 조건으로 반복 종료하기 --
+print("\n-- 조건으로 반복 종료하기 --")
+
+total = 0
+i = 0
+while True:
+    i += 1
+    total += i
+    if total > 100:
+        break
+print(i, "까지 합:", total)
