@@ -987,7 +987,7 @@ print("\n-- 누적과 조건의 결합 --")
 
 total = 0
 count = 0
-for v in range(1, 11):
+for v in range(1, 11):  #
     if v > 5:
         total += v
         count += 1
@@ -1004,3 +1004,14 @@ while True:
     if total > 100:
         break
 print(i, "까지 합:", total)
+
+# -- 최갯값, 최솟값 찾기 --
+print("\n-- 최댓값, 최솟값 찾기 --")
+
+first = int(input("1번쨰 :"))
+max_value = first
+for i in range(4):
+    v = int(input("다음: "))
+    if v > max_value:
+        max_value = v
+print("최댓값:", max_value)
