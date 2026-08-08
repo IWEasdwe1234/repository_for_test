@@ -1018,10 +1018,12 @@ print(i, "까지 합:", total)
 # -- 최댓값, 최솟값 찾기 --
 print("\n-- 최댓값, 최솟값 찾기 --")
 
-first = int(input("1번쨰 :"))
-max_value = first
-for i in range(4):
-    v = int(input("다음: "))
-    if v > max_value:
-        max_value = v
+first = int(input("1번째 :"))  # 입력값을 정수로 변환(형변환)한 뒤 first에 저장(할당)
+max_value = first  # first 값을 max_value에 저장(할당)
+for i in range(
+    4
+):  # 4번 반복하여 0부터 3까지의 값을 차례대로 i에 저장 (인덱스로 사용 가능하지만 현재 코드에서 i는 미사용)
+    v = int(input("다음: "))  # 입력값을 정수로 변환(형변환)한 뒤 v에 저장(할당)
+    if v > max_value:  # 만약 v가 현재까지의 최댓값인 max_value보다 큰 경우
+        max_value = v  # v를 max_value에 저장(재할당)
 print("최댓값:", max_value)
