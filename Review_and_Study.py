@@ -1027,3 +1027,15 @@ for i in range(
     if v > max_value:  # 만약 v가 현재까지의 최댓값인 max_value보다 큰 경우
         max_value = v  # v를 max_value에 저장(재할당)
 print("최댓값:", max_value)
+
+# -- 조건 만족 값 검색하기 --
+print("\n-- 조건 만족 값 검색하기 --")
+
+n = int(input("횟수: "))  # 입력값을 정수로 변환(형변환)한 뒤 n에 저장(할당)
+for i in range(
+    n
+):  # n번(입력값) 반복하여 0부터 n-1까지의 값을 차례대로 i에 저장(할당) (현재 코드에서 i는 미사용)
+    v = int(input("측정값: "))  # 입력값을 정수로 변환(형변환)한 뒤 v에 저장(할당)
+    if v > 80:  # 만약 v값이 80보다 큰 경우
+        print(v, "발견")  # v값과 "발견"출력
+        break  # 반복문 종료
