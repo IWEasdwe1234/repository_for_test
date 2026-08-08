@@ -1039,3 +1039,15 @@ for i in range(
     if v > 80:  # 만약 v값이 80보다 큰 경우
         print(v, "발견")  # v값과 "발견"출력
         break  # 반복문 종료
+
+# -- 플래그 변수 활용 --
+print("\n-- 플래그 변수 활용 --")
+
+found = False  # 이상값 발견 여부를 나타내는 False를 found에 저장(할당)
+for v in [70, 92, 65]:  # 리스트의 값을 차례대로 v에 저장(할당)
+    if v > 80:  # 만약 v값이 80보다 큰 경우
+        found = True  # 이상값을 발견했음을 나타내는 True를 found에 저장(재할당)
+if found:  # 만약 found값이 True인 경우
+    print("이상값 있음")  # "이상값 있음" 출력
+else:  # found값이 False인 경우
+    print("모두 정상")  # "모두 정상" 출력
