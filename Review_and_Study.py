@@ -994,10 +994,12 @@ print("\n-- 누적과 조건의 결합 --")
 
 total = 0
 count = 0
-for v in range(1, 11):  # 1부터 시작해서 11직전까지 순차적으로 가져오기 반복
-    if v > 5:
-        total += v
-        count += 1
+for v in range(1, 11):  # 1부터 시작해서 11직전까지의 값을 차례대로 v에 저장
+    if v > 5:  # 만약 v값이 5보다 큰 경우
+        # 조건을 만족하는 v값은 6, 7, 8, 9, 10
+        total += v  # total에 현재 v값을 더하여 다시 total에 저장(재할당)
+        count += 1  # 조건을 만족할 때마다 count값 1씩 증가
+
 print("합:", total, "개수:", count)
 
 
