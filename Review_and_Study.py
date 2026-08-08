@@ -999,7 +999,6 @@ for v in range(1, 11):  # 1부터 시작해서 11직전까지의 값을 차례�
         # 조건을 만족하는 v값은 6, 7, 8, 9, 10
         total += v  # total에 현재 v값을 더하여 다시 total에 저장(재할당)
         count += 1  # 조건을 만족할 때마다 count값 1씩 증가
-
 print("합:", total, "개수:", count)
 
 
@@ -1008,15 +1007,15 @@ print("\n-- 조건으로 반복 종료하기 --")
 
 total = 0
 i = 0
-while True:
-    i += 1
-    total += i
-    if total > 100:
-        break
+while True:  # 조건이 True인 동안 계속 반복
+    i += 1  # i에 1을 더한 결과를 다시 i에 저장(재할당)
+    total += i  # total에 증가된 i값을 더한 결과를 다시 total에 저장(재할당)
+    if total > 100:  # total값이 100보다 큰 경우
+        break  # 반복문 종료
 print(i, "까지 합:", total)
 
 
-# -- 최갯값, 최솟값 찾기 --
+# -- 최댓값, 최솟값 찾기 --
 print("\n-- 최댓값, 최솟값 찾기 --")
 
 first = int(input("1번쨰 :"))
