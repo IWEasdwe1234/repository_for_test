@@ -1065,7 +1065,17 @@ print("\n-- 조건에 맞는 값만 골라내기 --")
 
 temps = [25, 32, 28, 35, 19]  # 리스트를 temps에 저장(할당)
 for t in temps:  # temps 리스트의 값을 차례대로 t에 저장(할당)
-    if t >= 30:  # 만약 t값이 30이상인 경우
-        print(t, "고온")  # 해당 조건을 만족한 t값과 "고온"출력
+    if t >= 30:  # 만약 t값이 30 이상인 경우
+        print(t, "고온")  # 해당 조건을 만족한 t값과 "고온" 출력
     elif t < 20:  # 앞 조건을 만족하지 않고, t값이 20보다 작은 경우
-        print(t, "저온")  # 해당 조건을 만족한 t값과 "저온"출력
+        print(t, "저온")  # 해당 조건을 만족한 t값과 "저온" 출력
+
+# -- 최댓값·최솟값 찾기 --
+print("\n-- 최댓값·최솟값 찾기 --")
+
+temps = [25, 32, 28, 35, 27]  # 리스트를 temps에 저장(할당)
+biggest = temps[0]  # temps의 0번 인덱스(리스트의 첫번째)를 biggest에 저장(할당)
+for t in temps:  # temps 리스트의 값을 차례대로 t에 저장(할당)하며 반복
+    if t > biggest:  # 만약 t값이 현재까지의 최댓값인 biggest보다 큰 경우
+        biggest = t  # 조건을 만족한 t값을 biggest에 저장(재할당)
+print(biggest)  # temps 리스트를 비교하여 찾은 최댓값 biggest 출력
