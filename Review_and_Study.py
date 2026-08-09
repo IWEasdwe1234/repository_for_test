@@ -1079,3 +1079,14 @@ for t in temps:  # temps 리스트의 값을 차례대로 t에 저장(할당)하
     if t > biggest:  # 만약 t값이 현재까지의 최댓값인 biggest보다 큰 경우
         biggest = t  # 조건을 만족한 t값을 biggest에 저장(재할당)
 print(biggest)  # temps 리스트를 비교하여 찾은 최댓값 biggest 출력
+
+# -- 빈 리스트에서 시작해 값 채우기 --
+print("\n-- 빈 리스트에서 시작해 값 채우기 --")
+
+temps = [25, 26, 24, 28]  # 리스트를 temps에 저장(할당)
+doubled = []  # 빈 리스트를 doubled에 저장(할당)
+for t in temps:  # temps 리스트의 값을 차례대로 t에 저장(할당)하며 반복
+    doubled.append(
+        t * 2
+    )  # t값에 2를 곱한 결과를 doubled 리스트 맨 뒤에 추가 (append() 리스트 메서드 기능)
+print(doubled)  # 값이 추가된 doubled 리스트 출력
