@@ -1090,3 +1090,14 @@ for t in temps:  # temps 리스트의 값을 차례대로 t에 저장(할당)하
         t * 2
     )  # t값에 2를 곱한 결과를 doubled 리스트 맨 뒤에 추가 (append() 리스트 메서드 기능)
 print(doubled)  # 값이 추가된 doubled 리스트 출력
+
+# -- 조건에 맞는 값으로 새 리스트 만들기 --
+print("\n-- 조건에 맞는 값으로 새 리스트 만들기 --")
+# 빈 리스트 + for + if + append = 필터링(조건에 맞는 값만 모음)
+
+temps = [25, 32, 28, 35, 27]  # 리스트를 temps에 저장(할당)
+high = []  # 빈 리스트를 high에 저장(할당)
+for t in temps:  # temps 리스트의 값을 차례대로 t에 저장(할당)하며 반복
+    if t > 30:  # 만약 t값이 30보다 큰 경우
+        high.append(t)  # 조건을 만족한 t값을 high 리스트 맨 뒤에 추가
+print(high)  # 조건을 만족한 t값이 차례대로 추가된 리스트 high 출력
