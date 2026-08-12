@@ -457,7 +457,7 @@ print(phone_num)  # 01012341234
 # 예시 3) 체이닝으로 여러 차례 바꾸기
 print('\n"! ! ! 체이닝 ! ! !".replace(" ", "").replace("!", "")')
 test_cn = "! ! ! 체이닝 ! ! !".replace(" ", "").replace("!", "")
-print(test_cn)
+print(test_cn)  # 체이닝
 
 
 # - split() -
