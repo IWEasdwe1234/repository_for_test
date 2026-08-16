@@ -23,3 +23,11 @@
 # print(f"\n{두줄*길이}\n")
 
 # = = = = = = = = = = = = = = = = = = = =
+
+a = 30
+b = "20"
+c = "이십"
+
+# print(a + b) # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+print(a + int(b))  # 50
+print(a + int(c))  # ValueError: invalid literal for int() with base 10: '이십'
