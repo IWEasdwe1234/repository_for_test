@@ -24,10 +24,16 @@
 
 # = = = = = = = = = = = = = = = = = = = =
 
-a = 30
-b = "20"
-c = "이십"
+# a = 30
+# b = "20"
+# c = "이십"
 
-# print(a + b) # TypeError: unsupported operand type(s) for +: 'int' and 'str'
-print(a + int(b))  # 50
-print(a + int(c))  # ValueError: invalid literal for int() with base 10: '이십'
+# # print(a + b) # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+# print(a + int(b))  # 50
+# print(a + int(c))  # ValueError: invalid literal for int() with base 10: '이십'
+
+# = = = = = = = = = = = = = = = = = = = =
+
+과일 = ["사과", "딸기", "포도", "거봉", "복숭아", "자두", "배"]
+조인 = "/ ".join(과일), "-".join(과일)
+print(조인)
