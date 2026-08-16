@@ -121,7 +121,13 @@ print("\n== 인덱싱, 슬라이싱 연습 ==")
 print("\n [ 인덱싱 연습 ] \n")
 
 INS = "인덱싱"
-print(INS[1])
+print(INS[0])  # 인 (첫 글자는 0번 인덱스)
+print(INS[1])  # 덱
+print(INS[2])  # 싱
+# print(INS[3]) : IndexError: string index out of range
+
+# - - - - - - - - - -
+print(f"\n{"- "*15}\n")
 
 print("\n [ 슬라이싱 연습 ] \n")
 
@@ -136,6 +142,9 @@ print(SLS[2:])  # 슬라이싱 -> 2번째 글자 이후의 단어
 print(SLS[:2])  # 슬라이싱 -> 2번째 글자까지 단어
 
 # 슬라이싱에서 마지막 단어는 출력 안됨
+
+# - - - - - - - - - -
+print(f"\n{"- "*15}\n")
 
 print("\n [ 슬라이싱 활용 연습 ] \n")
 TODAY = "20260726"
