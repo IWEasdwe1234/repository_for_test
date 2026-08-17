@@ -48,3 +48,8 @@
 # print(과일)  # 원본 리스트 변화 확인
 
 # = = = = = = = = = = = = = = = = = = = =
+
+for i in range(1, 10):
+    print(f"\n{"= "*5}\n\n{i}단\n")
+    for n in range(1, 10):
+        print(f"{i} x {n} = {i * n}")
