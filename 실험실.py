@@ -49,7 +49,7 @@
 
 # = = = = = = = = = = = = = = = = = = = =
 
-for i in range(1, 10):
-    print(f"\n{"= "*5}\n\n{i}단\n")
-    for n in range(1, 10):
-        print(f"{i} x {n} = {i * n}")
+# for 단 in range(1, 10):  # 1단 ~ 9단
+#     print(f"\n{"= "*5}\n\n{단} 단\n")  # 구분선
+#     for 수 in range(1, 10):  # 단과 곱할 숫자 1~9
+#         print(f"{단} x {수} = {단 * 수}")
