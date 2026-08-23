@@ -31,3 +31,19 @@ print(f"{len(튜플in리스트)}\n")
 print(f"{튜플in리스트[0]}\n")
 print(f"{튜플in리스트[0][1]}\n")
 # 튜플에서 마지막값 뒤에 쉼표를 넣어도 에러가 발생하지 않음
+
+print(ln1)
+print("--[ 튜플 리스트 정렬 ]--\n")
+# 튜플 리스트 정렬
+# sorted
+sensors = [(78, "모터온도"), (95, "베어링진동"), (32, "펌프압력")]
+a = sorted(sensors)  # (작은 값 → 큰값)
+b = sorted(sensors, reverse=False)  # (작은 값 → 큰값)
+c = sorted(sensors, reverse=True)  # (큰값 → 작은 값)
+print(f"sorted(sensors)\n{a}")
+print(f"sorted(sensors, reverse=False)\n{b}")
+print(f"sorted(sensors, reverse=True)\n{c}")
+# a와 b의 결과값이 같음(작은 값 → 큰값)
+
+print(ln2)
+print(f"가장 큰 값\n{c[0]}")
