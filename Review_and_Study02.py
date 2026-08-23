@@ -47,3 +47,17 @@ print(f"sorted(sensors, reverse=True)\n{c}")
 
 print(ln2)
 print(f"가장 큰 값\n{c[0]}")
+
+print(ln2)
+print("--[ 튜플 언패킹 ]--\n")
+
+리스트 = [
+    ("이름1", 30),
+    ("이름2", 20),
+    ("이름3", 40),
+    ("이름4", 10),
+]
+for 이름, 값 in 리스트:
+    기준값 = 30
+    if 값 > 기준값:
+        print(이름, "기준값 초과")
