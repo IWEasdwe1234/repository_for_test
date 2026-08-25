@@ -62,3 +62,9 @@ print(f'✅ 환경 설정 완료! 현재 적용된 폰트: {plt.rcParams["font.f
 
 plt.plot([1, 2, 3], [10, 20, 15])
 plt.show()
+
+
+# --------
+
+plt.plot(["1월", "2월", "3월"], [10, 20, 15])
+plt.show()
