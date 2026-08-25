@@ -68,3 +68,10 @@ plt.show()
 
 plt.plot(["1월", "2월", "3월"], [10, 20, 15])
 plt.show()
+
+# --------
+
+# 간단한 막대그래프
+plt.figure(figsize=(10, 5))
+plt.bar(["A호기", "B호기", "C호기"], [64, 70, 77])
+plt.show()
