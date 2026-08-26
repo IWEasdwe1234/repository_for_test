@@ -75,3 +75,17 @@ print("셋1 :", 셋1)  # {'값1', '값2'}
 리스트 = ["값1", "값2", "값2", "값1", "값1", "값2", "값1"]
 셋2 = set(리스트)
 print("셋2 :", 셋2)  # {'값1', '값2'}
+
+print(ln1)
+print("--[ 빈 셋 만들기 ]--\n")
+# 빈 중괄호 {}는 셋이 아니라 딕셔너리
+#  빈 셋은 반드시 set()으로 만들기
+
+empty_list = []
+print(type(empty_list))  # <class 'list'>
+empty_tuple = ()
+print(type(empty_tuple))  # <class 'tuple'>
+empty_set = {}
+print(type(empty_set))  # <class 'dict'> ← 함정!
+real_empty_set = set()
+print(type(real_empty_set))  # <class 'set'>
