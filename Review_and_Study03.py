@@ -75,3 +75,17 @@ plt.show()
 plt.figure(figsize=(10, 5))
 plt.bar(["A호기", "B호기", "C호기"], [64, 70, 77])
 plt.show()
+
+
+# --------
+
+# 요일
+days = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
+
+# 온도
+temps = [25, 27, 28, 30, 34, 36, 38]
+plt.plot(days, temps)
+plt.legend()
+plt.show()
+
+# --------

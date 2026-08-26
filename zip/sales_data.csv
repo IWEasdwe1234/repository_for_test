@@ -1,0 +1,9 @@
+order_id,order_date,category,product_name,quantity,unit_price
+1,2024-01-05,Electronics,Laptop,1,1200.00
+2,2024-01-07,Electronics,Mouse,2,25.50
+3,2024-01-12,Furniture,Desk,1,250.00
+4,2024-02-03,Electronics,Monitor,2,300.00
+5,2024-02-15,Furniture,Chair,4,80.00
+6,2024-03-01,Clothing,Hoodie,3,45.00
+7,2024-03-10,Electronics,Keyboard,1,75.00
+8,2024-03-22,Clothing,Jeans,2,55.00
