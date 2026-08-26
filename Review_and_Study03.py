@@ -60,32 +60,57 @@ print(f'✅ 환경 설정 완료! 현재 적용된 폰트: {plt.rcParams["font.f
 # --------
 
 
-plt.plot([1, 2, 3], [10, 20, 15])
-plt.show()
+# plt.plot([1, 2, 3], [10, 20, 15])
+# plt.show()
 
 
 # --------
 
-plt.plot(["1월", "2월", "3월"], [10, 20, 15])
-plt.show()
+# plt.plot(["1월", "2월", "3월"], [10, 20, 15])
+# plt.show()
 
 # --------
 
 # 간단한 막대그래프
-plt.figure(figsize=(10, 5))
-plt.bar(["A호기", "B호기", "C호기"], [64, 70, 77])
-plt.show()
+# plt.figure(figsize=(10, 5))
+# plt.bar(["A호기", "B호기", "C호기"], [64, 70, 77])
+# plt.show()
 
 
 # --------
 
-# 요일
-days = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
+# # 요일
+# days = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
 
-# 온도
-temps = [25, 27, 28, 30, 34, 36, 38]
-plt.plot(days, temps)
+# # 온도
+# temps = [25, 27, 28, 30, 34, 36, 38]
+# plt.plot(days, temps)
+# plt.legend()
+# plt.show()
+
+# --------
+
+df = pd.read_csv("zip/17_열처리.csv")
+
+df_a = df[df["배치"] == "로트A"]
+
+plt.plot(df_a["측정시각"], df_a["온도"], label="온도")
+plt.plot(df_a["측정시각"], df_a["OP값"], label="OP값")
+plt.plot(df_a["측정시각"], df_a["CP값"], label="CP값")
 plt.legend()
+plt.show()
+
+df_a = df[df["배치"] == "로트A"]
+
+plt.plot(
+    df_a["측정시각"],
+    df_a["온도"],
+    label="로트A",
+    color="gray",
+    linestyle="--",
+    marker="o",
+)
+plt.legend(loc="upper right")
 plt.show()
 
 # --------
