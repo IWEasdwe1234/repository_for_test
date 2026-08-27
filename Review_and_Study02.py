@@ -82,10 +82,20 @@ print("--[ 빈 셋 만들기 ]--\n")
 #  빈 셋은 반드시 set()으로 만들기
 
 empty_list = []
-print(type(empty_list))  # <class 'list'>
+print(type(empty_list))  # <class 'list'> 리스트
+
 empty_tuple = ()
-print(type(empty_tuple))  # <class 'tuple'>
+print(type(empty_tuple))  # <class 'tuple'> 튜플
+
 empty_set = {}
-print(type(empty_set))  # <class 'dict'> ← 함정!
+print(type(empty_set))  # <class 'dict'> 딕셔너리
+
 real_empty_set = set()
-print(type(real_empty_set))  # <class 'set'>
+print(type(real_empty_set))  # <class 'set'> 셋
+
+print(ln1)
+A = {"a1", "a2", "a3", "a4"}
+print(A)
+A.add("a3")
+A.add("a5")
+print(A)
