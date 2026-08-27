@@ -96,6 +96,6 @@ print(type(real_empty_set))  # <class 'set'> 셋
 print(ln1)
 A = {"a1", "a2", "a3", "a4"}
 print(A)
-A.add("a3")
+A.add("a3")  # 이미 존재하는 값 무시
 A.add("a5")
 print(A)
