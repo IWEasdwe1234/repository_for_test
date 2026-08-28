@@ -94,8 +94,22 @@ real_empty_set = set()
 print(type(real_empty_set))  # <class 'set'> 셋
 
 print(ln1)
+print("--[ .add ]--\n")
 A = {"a1", "a2", "a3", "a4"}
 print(A)
 A.add("a3")  # 이미 존재하는 값 무시
 A.add("a5")
 print(A)
+
+print(ln1)
+print("--[ in ]--\n")
+# 값이 셋(또는 리스트, 튜플, 문자열)안에 있으면 True, 없으면 False
+
+A = {"a1", "a2", "a3", "a4"}
+print("a3" in A)  # True
+print("A3" in A)  # False
+print("A5" in A)  # False
+
+# 활용 예
+if "a4" in A:
+    print("a4 존재")
