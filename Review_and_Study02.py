@@ -113,3 +113,16 @@ print("A5" in A)  # False
 # 활용 예
 if "a4" in A:
     print("a4 존재")
+
+print(ln1)
+print("--[ sorted ]--\n")
+# 셋을 정렬 (결과 : 정렬된 리스트)
+
+A = {"a2", "a4", "a1", "a3"}
+st_a = sorted(A)
+print(st_a)  # ['a1', 'a2', 'a3', 'a4'] ()
+print(type(st_a))
+
+# 중복 제거
+B = {"a2", "a2", "a1", "a3"}  # a2가 2개
+print(sorted(set(B)))  # ['a1', 'a2', 'a3'] (중복된 a2 제거, 정렬)
