@@ -126,3 +126,12 @@ print(type(st_a))
 # 중복 제거
 B = {"a2", "a2", "a1", "a3"}  # a2가 2개
 print(sorted(set(B)))  # ['a1', 'a2', 'a3'] (중복된 a2 제거, 정렬)
+
+print(ln1)
+print("--[ .union ]--\n")
+
+A = {"a1", "a3", "a4", "a6"}
+B = {"b5", "b2", "b4", "b7"}
+print(sorted(A.union(B)))
+print(sorted(B.union(A)))
+print(sorted(A | B))
