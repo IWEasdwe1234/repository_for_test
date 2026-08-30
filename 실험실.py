@@ -99,4 +99,30 @@
 
 # print("MP3 음원 추출이 완료되었습니다.")
 
+# -------------
+
+# import os
+
+# # 사용자 홈 디렉토리 경로를 자동으로 가져와 'Downloads' 폴더를 지정
+# # Windows: C:\Users\사용자이름\Downloads
+# # Mac/Linux: /Users/사용자이름/Downloads
+# download_dir = os.path.join(os.path.expanduser('~'), 'Downloads')
+
+# ydl_opts = {
+#     'format': 'bestaudio/best',
+#     # 경로와 파일명 포맷을 결합 (예: C:\Users\...\Downloads/영상제목.mp3)
+#     'outtmpl': os.path.join(download_dir, '%(title)s.%(ext)s'),
+#     'postprocessors': [{
+#         'key': 'FFmpegExtractAudio',
+#         'preferredcodec': 'mp3',
+#         'preferredquality': '192',
+#     }],
+# }
+
+# with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+#     urls = ['https://youtube.com']
+#     ydl.download(urls)
+
+# print(f"다운로드가 완료되어 {download_dir} 폴더에 저장되었습니다.")
+
 # = = = = = = = = = = = = = = = = = = = =
