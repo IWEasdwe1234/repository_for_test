@@ -146,3 +146,12 @@ print(sorted(B.intersection(A)))
 print(sorted(A & B))
 
 # 결과 : ['a1', 'a4']
+
+print(ln1)
+print("--[ .difference ]--\n")
+# 앞 셋에는 있고 뒤 셋에는 없는 값만 남기기
+print(sorted(A.difference(B)))  # ['a3', 'a6']
+print(sorted(B.difference(A)))  # ['a2', 'a5']
+print(sorted(A - B))  # ['a3', 'a6']
+
+print(ln1)
