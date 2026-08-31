@@ -129,9 +129,20 @@ print(sorted(set(B)))  # ['a1', 'a2', 'a3'] (중복된 a2 제거, 정렬)
 
 print(ln1)
 print("--[ .union ]--\n")
-
+# 두 셋을 합쳐 중복없는 전체 목록으로 만들기
 A = {"a1", "a3", "a4", "a6"}
-B = {"b5", "b2", "b4", "b7"}
+B = {"a5", "a2", "a4", "a1"}
 print(sorted(A.union(B)))
 print(sorted(B.union(A)))
 print(sorted(A | B))
+
+# 결과 : ['a1', 'a2', 'a3', 'a4', 'a5', 'a6']
+
+print(ln1)
+print("--[ .intersection ]--\n")
+# 두 셋에 공통으로 들어있는 값만 남기기
+print(sorted(A.intersection(B)))
+print(sorted(B.intersection(A)))
+print(sorted(A & B))
+
+# 결과 : ['a1', 'a4']
