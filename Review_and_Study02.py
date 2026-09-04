@@ -163,3 +163,10 @@ print(ln1)
 print(딕셔너리["키2"])  # 2 (값 꺼내기)
 
 print(ln1)
+print("--[ .get ]--\n")
+# 만약 키가 없으면 None을 돌려줌
+print(딕셔너리.get("키1"))  # 1
+print(딕셔너리.get("키4"))  # None
+
+
+print(ln1)
