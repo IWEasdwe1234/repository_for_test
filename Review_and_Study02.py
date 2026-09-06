@@ -168,5 +168,14 @@ print("--[ .get ]--\n")
 print(딕셔너리.get("키1"))  # 1
 print(딕셔너리.get("키4"))  # None
 
+print(ln1)
+print("--[ .in ]--\n")
+# .in
+# 키가 있으면 True, 없으면 False
+# 형태 : 키 in 딕셔너리
+print("키1" in 딕셔너리)  # True
+print("키4" in 딕셔너리)  # False
+print(1 in 딕셔너리)  # False
+print(1 in 딕셔너리.values())  # True (키 값이 있는지 확인하려면 .values()를 사용)
 
 print(ln1)
