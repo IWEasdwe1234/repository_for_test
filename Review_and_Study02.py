@@ -205,3 +205,14 @@ print(딕셔너리)  # {'키1': 1, '키2': 2, '키3': 3}
 print(딕셔너리.keys())  # dict_keys(['키1', '키2', '키3'])
 
 print(ln1)
+print("--[ values() ]--\n")
+# 형태 : 딕셔너리.values()
+# 모든 값만 모아서 꺼내기
+print(딕셔너리.values())  # dict_values([1, 2, 3])
+
+# sum, len을 사용하여 합계·평균을 계산 가능
+딕셔너리_합계 = sum(딕셔너리.values())  # 6 (합계)
+딕셔너리_값갯수 = len(딕셔너리.values())  # 3 (값의 갯수)
+print(딕셔너리_합계 / 딕셔너리_값갯수)  # 2.0 (값의 평균)
+
+print(ln1)
