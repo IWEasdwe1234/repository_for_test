@@ -216,3 +216,22 @@ print(딕셔너리.values())  # dict_values([1, 2, 3])
 print(딕셔너리_합계 / 딕셔너리_값갯수)  # 2.0 (값의 평균)
 
 print(ln1)
+print("--[ items() ]--\n")
+# 형태 :
+# for 키변수, 값변수 in 딕셔너리.items():
+# 키와 값을 짝으로 꺼내기
+딕셔너리 = {"A": 1, "B": 2, "C": 3}
+print(딕셔너리)
+
+for 변수_키, 변수_값 in 딕셔너리.items():
+    print(변수_키)  # A B C
+
+for 변수_키, 변수_값 in 딕셔너리.items():
+    print(변수_값)  # 1 2 3
+
+print(ln2)
+print(변수_키)  # C
+print(변수_값)  # 3
+# for문에서 마지막으로 할당되었던 값 "C"와 3이 출력
+
+print(ln1)
