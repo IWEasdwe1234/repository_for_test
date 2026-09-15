@@ -126,3 +126,17 @@
 # print(f"다운로드가 완료되어 {download_dir} 폴더에 저장되었습니다.")
 
 # = = = = = = = = = = = = = = = = = = = =
+
+# 1부터 100 사이의 임의의 숫자 7개 뽑고 결과를 오름차순으로 정렬
+
+# import random
+
+# random_numbers = []
+# for _ in range(7):
+#     random_number = random.randint(1, 100)
+#     random_numbers.append(random_number)
+
+# random_numbers.sort()
+# print(random_numbers)
+
+# = = = = = = = = = = = = = = = = = = = =
