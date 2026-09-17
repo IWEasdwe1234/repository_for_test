@@ -140,3 +140,29 @@
 # print(random_numbers)
 
 # = = = = = = = = = = = = = = = = = = = =
+
+# 팀 공통 분석 환경 (Python 3.12 기준)
+# 설치: ..venv\Scripts\python.exe -m pip install -r requirements.txt
+# CI용 requirements-ci.txt(저장소 구조 검사)와는 별개 파일
+# 기본
+# numpy
+# pandas
+# scipy
+# matplotlib
+# seaborn
+# scikit-learn
+
+# 시계열 / 이상 탐지 / 고장 예측·RUL 예측
+# statsmodels
+# pyod
+# xgboost
+
+# 노트북 실행 (로컬 전용, CI는 노트북을 실행하지 않음)
+# jupyterlab
+# ipykernel
+
+# 개발 도구
+# nbstripout
+# pytest
+
+# = = = = = = = = = = = = = = = = = = = =
