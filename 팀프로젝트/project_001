@@ -1,0 +1,8 @@
+[컬럼명]               	약어 풀이 (Full Name)	                     주요 의미 및 역할
+[MEAS_DT]       	    Measurement Date & Time	                    센서 데이터 측정 일시
+[LOT_NO]            	Lot Number                              	작업 단위(소재 및 제품) 식별 번호
+[CLN-IN]        	    Clean-In	                                세정 공정 입구 측 온도 또는 세정액 온도
+[TC-Z1] ~ [TC-Z9]	    Thermocouple Zone 1 ~ Zone 9	            가열로 각 구간(Zone 1~9)의 열전대(TC) 측정 온도
+[OP-Z1] ~ [OP-Z8]	    Operating Power / Output Zone 1 ~ Zone 8	각 구간 히터/버너의 조절 출력 비율(%)
+[CP-Z4], [CP-Z4M]	    Cooling Power Zone 4 / Main	    	        각 구간의 냉각 제어 출력 Zone 4 영역의 냉각 제어 출력 또는 관련 제어 변수 수치
+[TC-OUT1], [TC-OUT2]	Thermocouple Outlet 1, 2	                가열로 출구 구간의 열전대 측정 온도
